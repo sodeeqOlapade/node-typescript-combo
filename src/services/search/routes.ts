@@ -13,6 +13,7 @@ export default [
     path: "/:id",
     method: "get",
     handler: async (req: Request, res: Response) => {
+      console.log('Was here...')
       res.json(`Hello ${req.params.id}`);
     }
   }
