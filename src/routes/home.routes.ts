@@ -8,5 +8,12 @@ export default [
     handler: async (req: Request, res: Response) => {
       res.send("Hello world!");
     }
+  },
+  {
+    path: "/:id",
+    method: "get",
+    handler: async (req: Request, res: Response) => {
+      res.json(`Hello ${req.params.id}`);
+    }
   }
 ];
